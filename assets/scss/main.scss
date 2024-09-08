@@ -1,0 +1,312 @@
+$shade-0 : #000000;
+$shade-1 : #333333;
+$shade-2 : #CDCDCD;
+$shade-3 : #F6F6F6;
+$shade-4 : #ffffff;
+$accent-1 : #002962;
+$header-font : Verdana, Geneva, Tahoma, sans-serif ;
+$main-font : Verdana, Geneva, Tahoma, sans-serif ;
+
+body{
+    margin: 0px;
+    min-width: 400px;
+    
+}
+#body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $shade-4;
+}
+.background{
+    background-image: linear-gradient(
+    to bottom,  $shade-4 300px, transparent 800px
+    ), url("~/assets/image/beehive-37436.svg");
+    background-repeat: no-repeat;
+    background-position: right 60px top 0px;
+}
+
+.default-container{
+    padding: 0 5%;
+}
+
+#logo{
+    height: 2rem;
+    padding: 0.5em;
+    border: none;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+#logo >img {
+    width: 4rem;
+}
+
+a{
+    text-decoration: none;
+    font-family: $main-font;
+    color: $accent-1;
+}
+
+.link-text:hover{
+    text-decoration: underline;
+}
+
+.nav > li:not(.nav-right){
+    display: inline;
+    float: left;
+}
+.nav{
+    background-color: $shade-1;
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.nav >li > a:hover:not(#logo){
+    background-color: $shade-3;
+    color: $accent-1;
+}
+.nav >li > a {
+    padding: 1.2em;
+    display: inline-block;
+    background-color: $shade-1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $shade-3;
+    font-style: normal;
+    
+}
+.nav{
+    height: 3.5rem;
+    padding: 0% 5% ;
+}
+.nav-right{
+    display: inline;
+    float: right;
+}
+
+#search-bar {
+    margin: 10px 0px;
+    width: 30%;
+}
+#search-bar > input{
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 40px;
+    background-color: $shade-3;
+}
+
+#search-button {
+    margin: 10px 0px;
+    background-color: $shade-2;
+    margin-right: 10px;
+    
+}
+#search-button > button> svg{
+    fill: $accent-1;
+}
+#search-button > button{
+    height: 40px;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer{
+    margin: 0px;
+    color:  $shade-4;
+    background-color: $shade-1;
+    min-height: 4rem;
+    padding: 1em;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: auto;
+    left: 0;
+    bottom: 0;
+}
+.social {
+    margin: 1.5em 1.5em  ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.social > li> a{
+    color: $shade-4;
+}
+.social > li{
+    display: inline;
+    padding: 0px 1.5em ;
+    list-style-type: none;
+
+}
+#copyright{
+    margin:  1em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-btn{
+    background-color:$accent-1;
+    color: $shade-4;
+    border-style: none;
+    padding: 0.8em;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border-color: $accent-1;
+    border-style: solid;
+}
+.primary-btn:hover{
+    background-color: transparent;
+    color: $accent-1;
+}
+
+.hero{
+    // margin-top: 1rem;
+    // background-color: $shade-3;
+    // background: $accent-1;
+    // background: radial-gradient(circle, farthest-side at 50% -40px, $accent-1 0%, rgba(0,0,0,0) 50%);
+    // background: radial-gradient(farthest-side at 50% -40px, $accent-1 0%, rgba(0,0,0,0) 90%);
+    padding: 3rem;
+    height: 40rem;
+    font-family: $header-font;
+    display:  flex;
+    align-items: center;
+    flex-direction: column ;
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        color: $shade-1;
+
+    }
+    .hero-links{
+        display: flex;
+        width: 20rem;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    a{
+        color: $accent-1;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #form-btn{
+        margin-top: 5rem;
+        max-height: 4rem;
+        font-weight: bold;
+        // flex-grow: 2;
+    }
+
+    
+    // border-style: solid;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color: $shade-4;
+    max-width: 50rem;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    .card-thumbnail{
+        margin-right: 3em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img{
+            object-fit: cover;
+            width: 15em;
+            height: 15em;
+        }
+    }
+    h1{
+        margin-top: 0px;
+    }
+  
+    .card-title{
+        font-family: $header-font;
+    }
+    .card-content{
+        font-family: $main-font;
+    }
+    .card-buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        button{
+            margin: 1em;
+        }
+    }
+    
+}
+
+.drop-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#featured-blog{
+    margin: 1em;
+    .card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
+}
+
+#carousel-blog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.7rem;
+    img{
+        width: 10rem;
+        height: 10rem;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    .card{
+        width: 30rem;
+    }
+    .card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .card{
+        margin: 1em;
+    }
+}
+
+.blog-list{
+    .card{
+        margin: 1em;
+    }
+    .card-top-text{
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size:1.5rem;
+        color: $shade-1;
+    }
+    .card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

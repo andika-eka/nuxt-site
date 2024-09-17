@@ -25,9 +25,6 @@
                 </ul>
             </div>
         </div>
-    <!-- <svg width="1000" height="1000" viewBox="0 0 512 512">
-        <use xlink:href="#icomoon-ignore"/>
-    </svg> -->
         <div class="default-container">
             <slot />
         </div>

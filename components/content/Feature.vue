@@ -1,6 +1,6 @@
 <template>
     <div class="feature-img">
-        <img class="drop-shadow" :src="src" alt="">
+        <img class="" :src="src" alt="">
         <div class="image-subtext">
             <div class="image-source">
                 <p>

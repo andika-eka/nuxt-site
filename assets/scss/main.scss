@@ -45,7 +45,7 @@ body{
 a{
     text-decoration: none;
     font-family: $main-font;
-    color: $accent-1;
+    color: $shade-1;
 }
 
 .link-text:hover{
@@ -170,11 +170,6 @@ a{
 }
 
 .hero{
-    // margin-top: 1rem;
-    // background-color: $shade-3;
-    // background: $accent-1;
-    // background: radial-gradient(circle, farthest-side at 50% -40px, $accent-1 0%, rgba(0,0,0,0) 50%);
-    // background: radial-gradient(farthest-side at 50% -40px, $accent-1 0%, rgba(0,0,0,0) 90%);
     padding: 3rem;
     height: 40rem;
     font-family: $header-font;
@@ -221,6 +216,11 @@ a{
     padding: 2em;
     display: flex;
     flex-direction: row;
+    border-color: $shade-2;
+    border-style: solid;
+    border-width: 1px;
+    padding-right: 1em;
+    border-radius: 0.2rem;
     .card-thumbnail{
         margin-right: 3em;
         display: flex;
@@ -255,42 +255,6 @@ a{
 .drop-shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#featured-blog{
-    margin: 1em;
-    .card-text{
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 6;
-        -webkit-box-orient: vertical;
-    }
-}
-
-#carousel-blog{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 0.7rem;
-    img{
-        width: 10rem;
-        height: 10rem;
-    }
-    h1{
-        font-size:1.5rem;
-    }
-    .card{
-        width: 30rem;
-    }
-    .card-text{
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
-    .card{
-        margin: 1em;
-    }
-}
 
 .blog-list{
     .card{
@@ -304,6 +268,55 @@ a{
         color: $shade-1;
     }
     .card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+#featured-blog{
+    margin: 1em;
+    .card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
+}
+
+#carousel-blog{
+    font-size: 0.7rem;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 80em;
+    // padding: 0rem 30rem ;
+    span{
+        display: inline-block;
+    }
+    img{
+        width: 10rem;
+        height: 10rem;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    .card{
+        width: 30rem;
+        height: 10rem;
+        white-space: wrap;
+    }
+    .card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .card{
+        margin: 1em;
+    }
+
+    .card-title{
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 3;

@@ -1,8 +1,8 @@
 <template>
     <div class="section">
-        <ContentList path="/blogs/fake" v-slot="{ list }">
+        <ContentList path="/blogs" v-slot="{ list }">
             <div class="blog-list" v-for=" article in list" :key="article._path">
-                <BlogCard :article="article" :fake="true"/>
+                <BlogCard :article="article" :fake="true" :display-date="true" />
             </div>
         </ContentList>
     </div>

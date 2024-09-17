@@ -50,10 +50,11 @@ $main-font : Verdana, Geneva, Tahoma, sans-serif ;
     justify-content: space-between;
     align-items: flex-start;
     .toc-article{
-        border-color: $shade-1;
+        border-color: $shade-2;
         border-style: solid;
         border-width: 1px;
         padding-right: 1em;
+        border-radius: 0.2rem;
         margin-top: 20rem;
         max-width: 15rem;
         a{
